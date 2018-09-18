@@ -1,0 +1,7 @@
+title: "Diribeo"
+description: "Le néguentrope"
+url: "http://www.diribeo.fr"
+image: "/images/favicons/media.png"
+baseurl: ""
+plugins:
+  - jekyll-feed
