@@ -1,0 +1,29 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-style: $headings-font-style;
+}
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      &.active .nav-link {
+        border-bottom: 2px solid $primary;
+      }
+    }
+    .nav-link {
+      font-family: $headings-font-family;
+      font-weight: $headings-font-weight;
+      font-style: $headings-font-style;
+    }
+  }
+}
+
+.rounded-circle {
+  border-radius: 1000rem !important;
+}
+
+.btn {
+  font-family: $font-family-serif;
+  font-weight: bold;
+  font-style: italic;
+  @extend .rounded-circle;
+}

@@ -1,0 +1,16 @@
+.page-header {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-bottom: 3rem;
+
+  background-color: $orange;
+  color: $white;
+  h1 {
+    font-family: $font-family-sans-serif;
+    font-style: normal;
+  }
+  p {
+    @extend .h2;
+    font-weight: normal;
+  }
+}

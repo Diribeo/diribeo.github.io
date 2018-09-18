@@ -1,6 +1,6 @@
-# Site vitrine Diribeo
+# Site vitrine Diribéo
 
-Ce dépôt contient les sources du site vitrine de Diribeo, hébergé via GitHub Pages et accessible à l'adresse http://www.diribeo.fr/
+Ce dépôt contient les sources du site vitrine de Diribéo, hébergé via GitHub Pages et accessible à l'adresse http://www.diribeo.fr/
 
 ## Instructions d'installation
 
