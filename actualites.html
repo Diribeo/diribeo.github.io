@@ -5,6 +5,11 @@ layout: main-page
 ---
 
 <div class="container">
-  <h2 class="accentue">En construction</h2>
-  <p>Retrouvez-nous sur <a href="http://www.diribeo.fr/">diribeo.fr</a>.</p>
+  {% for post in site.posts limit:3 %}
+    <article>
+      <h2 class="accentue">{{ post.title }}</h2>
+      <div>{{ post.excerpt }}</div>
+      <a href="{{ post.url }}">Lire la suite</a>
+    </article>
+  {% endfor %}
 </div>

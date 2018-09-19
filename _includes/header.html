@@ -1,6 +1,6 @@
 <nav id="global-navbar">
   <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="images/logo.svg" alt="Logo Diribeo" title="Diribeo" />
+    <img src="{{ site.baseurl }}/images/logo.svg" alt="Logo Diribeo" title="Diribeo" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar-nav" aria-controls="global-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
       <li class="nav-item {% if page.url == "/portfolio.html" %}active{% endif %}">
         <a class="nav-link" href="{{ site.baseurl }}/portfolio.html">Portfolio</a>
       </li>
-      <li class="nav-item {% if page.url == "/actualites.html" %}active{% endif %}">
+      <li class="nav-item {% if page.url == "/actualites.html" or page.collection == "posts" %}active{% endif %}">
         <a class="nav-link" href="{{ site.baseurl }}/actualites.html">Actualités</a>
       </li>
       <li class="nav-item {% if page.url == "/contact.html" %}active{% endif %}">

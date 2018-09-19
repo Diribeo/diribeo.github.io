@@ -5,3 +5,14 @@ image: "/images/favicons/media.png"
 baseurl: ""
 plugins:
   - jekyll-feed
+collections:
+  posts:
+    output: true
+    permalink: /actualites/:title
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      type: "article"
