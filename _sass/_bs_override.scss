@@ -1,5 +1,25 @@
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1 {
+  font-family: $font-family-sans-serif;
+}
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-style: $headings-font-style;
+  &.accentue {
+    position: relative;
+    &:before {
+      content: '';
+      background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.83 4.22'%3E%3Cpath fill='#{$primary}' d='M4.93,0 L 5.83,2 L .6,4.22 L 0,2.89 z'/%3E%3C/svg%3E"), "#", "%23");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      left: -2.5rem;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
 }
 
 .navbar {
