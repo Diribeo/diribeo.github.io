@@ -2,10 +2,13 @@
 ---
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700,700i|Noto+Serif:400,400i,700,700i');
 
 @import "bs_variables";
 @import "bootstrap_src/bootstrap";
 @import "bs_override";
 
 @import "layout/header.scss";
+@import "layout/info-page.scss";
+
+@import "pages/meridian.scss";

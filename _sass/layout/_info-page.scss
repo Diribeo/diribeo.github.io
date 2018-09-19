@@ -1,0 +1,43 @@
+.info-page {
+  &--header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @include media-breakpoint-up(md) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+    margin-bottom: 3rem;
+  
+    background-color: $orange;
+    background-image: url(../images/rayons.svg);
+    background-repeat: no-repeat;
+    background-size: auto 140%;
+    background-position-x: 20%;
+    background-position-y: center;
+    color: $white;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &--title-container {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
+    }
+    p {
+      @extend .h2;
+      font-weight: normal;
+    }
+  }
+  &--section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    h2 {
+      @extend .accentue;
+    }
+  }
+}

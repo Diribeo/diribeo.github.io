@@ -5,7 +5,9 @@ $primary: $orange;
 $body-color: #231f20;
 
 $font-family-sans-serif:      "Libre Franklin", Arial, sans-serif;
-$font-family-serif:           Georgia, "Times New Roman", serif;
+$font-family-serif:           Georgia, "Noto Serif", "Times New Roman", serif;
+
+$lead-font-weight:            normal;
 
 $headings-font-family:        $font-family-serif;
 $headings-font-weight:        bold;

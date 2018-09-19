@@ -1,0 +1,104 @@
+#meridian--schema-structure {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  .structure-background {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url('../images/meridian/structure.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+  &:hover .structure-background {
+    background-image: url('../images/meridian/structure-alpha.svg');
+  }
+  .logos {
+    width: percentage(1/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 30rem;
+    z-index: 2;
+
+    img.logo-meridian {
+      width: 60%;
+    }
+
+    &.panneau-1 {
+      align-items: flex-start;
+      @include hover-focus() {
+        ~ .panneau-1.details { display: flex; }
+        ~ .structure-background { background-image: url('../images/meridian/structure-alpha-gauche.svg'); }
+      }
+    }
+    &.panneau-2 {
+      justify-content: center;
+      span {
+        @extend .lead, .text-muted;
+        font-weight: bold;
+      }
+      img, span {
+        margin-top: 1rem; margin-bottom: 1rem;
+      }
+      @include hover-focus() {
+        ~ .panneau-2.details { display: flex; }
+        ~ .structure-background { background-image: url('../images/meridian/structure-alpha-milieu.svg'); }
+      }
+    }
+    &.panneau-3 {
+      align-items: flex-end;
+      @include hover-focus() {
+        ~ .panneau-3.details { display: flex; }
+        ~ .structure-background { background-image: url('../images/meridian/structure-alpha-droite.svg'); }
+      }
+    }
+  }
+  .details {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $body-bg;
+    position: absolute;
+    top: 0; bottom: 0;
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+
+    &.panneau-1 {
+      width: percentage(2/3);
+      background-image: url('../images/meridian/structure-alpha-gauche.svg');
+      background-size: 150% auto;
+      background-position-x: right;
+      left: auto; right: 0;
+      justify-content: space-around;
+      p { margin-top: $paragraph-margin-bottom; }
+    }
+    &.panneau-2 {
+      width: percentage(1/3);
+      background-image: url('../images/meridian/structure-alpha-milieu.svg');
+      background-size: 300% auto;
+      &.details-gauche {
+        background-position-x: left;
+        left: 0; right: auto;
+      }
+      &.details-droite {
+        background-position-x: right;
+        left: auto; right: 0;
+      }
+    }
+    &.panneau-3 {
+      width: percentage(2/3);
+      background-image: url('../images/meridian/structure-alpha-droite.svg');
+      background-position-x: left;
+      background-size: 150% auto;
+      left: 0; right: auto;
+      text-align: right;
+    }
+  }
+}
