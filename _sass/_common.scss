@@ -1,0 +1,39 @@
+.accentue {
+  position: relative;
+  &:before {
+    content: '';
+    background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.83 4.22'%3E%3Cpath fill='#{$primary}' d='M4.93,0 L 5.83,2 L .6,4.22 L 0,2.89 z'/%3E%3C/svg%3E"), "#", "%23");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.separateur-cta {
+  height: 7rem;
+  margin: 2rem auto;
+  background-image: url('../images/petits-rayons-grises.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  border: none;
+  &:after {
+    content: '+';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    font-size: 7rem;
+    line-height: 1;
+    color: $secondary;
+    text-align: center;
+  }
+}

@@ -7,8 +7,12 @@
 @import "bs_variables";
 @import "bootstrap_src/bootstrap";
 @import "bs_override";
+@import "common";
 
-@import "layout/header.scss";
-@import "layout/info-page.scss";
+@import "layout/header";
+@import "layout/info-page";
 
-@import "pages/meridian.scss";
+@import "pages/meridian";
+@import "pages/diribeo";
+@import "pages/portfolio";
+@import "pages/contact";

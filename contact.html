@@ -5,6 +5,31 @@ layout: main-page
 ---
 
 <div class="container">
-  <h2 class="accentue">En construction</h2>
-  <p>Retrouvez-nous sur <a href="http://www.diribeo.fr/">diribeo.fr</a>.</p>
+  <section class="info-page--section">
+    <h2>Diribéo : plus de 20 ans d’expérience</h2>
+
+    <p>Lorem ipsum</p>
+  </section>
+
+  <section class="info-page--section">
+    <h2>L'équipe</h2>
+
+    <ul id="contact--equipe">
+      {% for membre in site.equipe %}
+        <li>
+          <img src="{{ site.baseurl }}{{ membre.image }}" alt="{{ membre.title }}" />
+          <div class="media-body">
+            <h3>{{ membre.title }}</h3>
+            {{ membre.content }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="info-page--section">
+    <h2>Contactez-nous</h2>
+
+    
+  </section>
 </div>

@@ -1,0 +1,10 @@
+#contact--equipe {
+  @extend .list-unstyled;
+  li {
+    @extend .media;
+    margin-bottom: 2rem;
+    img {
+      width: 10rem;
+    }
+  }
+}

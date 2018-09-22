@@ -9,10 +9,20 @@ collections:
   posts:
     output: true
     permalink: /actualites/:title
+  clients:
+    output: true
+    permalink: /clients/:title
+  equipe:
+    output: false
+    permalink: /equipe/:title
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "article"
-      type: "article"
+  - scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"

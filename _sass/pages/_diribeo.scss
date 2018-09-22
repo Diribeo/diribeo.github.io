@@ -1,0 +1,35 @@
+#diribeo--etapes-installation {
+  @extend .list-unstyled, .row;
+  > li {
+    @extend .col-12, .col-md-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  img {
+    width: 80%;
+    padding: 22%;
+    background-image: url('../images/petits-rayons-moitie.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 3rem;
+  }
+  > li:first-child img {
+    background-image: url('../images/petits-rayons-quart.svg');
+  }
+  > li:last-child img {
+    background-image: url('../images/petits-rayons-trois-quarts.svg');
+  }
+}
+
+#diribeo--en-continu {
+  img {
+    width: 8rem;
+    padding: 1.5rem;
+    margin-right: $grid-gutter-width;
+    background-image: url('../images/petits-rayons.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

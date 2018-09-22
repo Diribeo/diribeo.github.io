@@ -5,6 +5,30 @@ layout: main-page
 ---
 
 <div class="container">
-  <h2 class="accentue">En construction</h2>
-  <p>Retrouvez-nous sur <a href="http://www.diribeo.fr/">diribeo.fr</a>.</p>
+  <section class="info-page--section">
+    <h2>Parmi nos clients Meridian</h2>
+    
+    <p>PME ou multinationales, dans des domaines aussi variés que le transport, l’energie ou la culture, ces entreprises ont choisi Meridian pour la gestion de leur documentation et Diribéo pour son installation.</p>
+    <p>Cliquez sur les logos pour en savoir plus sur notre collaboration.</p>
+
+    <ul id="portfolio--clients">
+      {% for client in site.clients %}
+        <li>
+          <a href="{{ client.url }}">
+            <img src="{{ site.baseurl }}{{ client.image }}" alt="{{ client.title }}" />
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="info-page--section text-center">
+    <a href="#" class="btn btn-primary">
+      Découvrez d’autres entreprises utilisant Meridian
+    </a>
+    <hr class="separateur-cta" />
+    <a href="{{ site.baseurl }}/contact.html" class="btn btn-secondary">
+      Prenez contact avec notre équipe
+    </a>
+  </section>
 </div>
