@@ -1,3 +1,10 @@
+#meridian--schema-besoins {
+  img {
+    width: 30rem;
+    max-width: 100%;
+  }
+}
+
 #meridian--schema-structure {
   position: relative;
   width: 100%;
@@ -99,6 +106,53 @@
       background-size: 150% auto;
       left: 0; right: auto;
       text-align: right;
+    }
+  }
+}
+
+#meridian--schema-souscriptions {
+  ul {
+    @extend .list-unstyled, .row;
+    li {
+      @extend .col-12, .col-md-4;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      background-image: url('../images/petits-rayons.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80% auto;
+      position: relative;
+      + li:before {
+        content: '+';
+        position: absolute;
+        font-size: 5rem;
+        font-weight: bold;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        margin: auto;
+        top: -2.5rem;
+        left: 0; right: 0;
+        @include media-breakpoint-up(md) {
+          top: 0; bottom: 0;
+          left: -2.5rem; right: auto;
+        }
+      }
+    }
+  }
+  dl {
+    text-align: center;
+    dd {
+      img {
+        display: block;
+        margin: 1rem auto;
+        height: 5rem;
+      }
+      span {
+        @extend .small;
+        max-width: 50%;
+      }
     }
   }
 }
