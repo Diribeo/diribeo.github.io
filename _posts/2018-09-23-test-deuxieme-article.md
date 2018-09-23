@@ -8,6 +8,7 @@ Voici mon __article__ il a plusieurs mots.
 Il a aussi :
 - une liste
 - avec deux éléments
+- et même un troisième
 
 et c'est tout.
 
