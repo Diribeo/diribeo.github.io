@@ -4,6 +4,8 @@ $orange:  #f06923;
 $primary: $orange;
 $secondary: $gray-400;
 
+$spacer: 1rem !default;
+
 $body-color: #231f20;
 
 $font-family-sans-serif:      "Libre Franklin", Arial, sans-serif;
@@ -11,6 +13,7 @@ $font-family-serif:           Georgia, "Noto Serif", "Times New Roman", serif;
 
 $lead-font-weight:            normal;
 
+$headings-margin-bottom:      $spacer;
 $headings-font-family:        $font-family-serif;
 $headings-font-weight:        bold;
 $headings-font-style:         italic;

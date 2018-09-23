@@ -2,18 +2,23 @@
   @extend .list-unstyled, .row;
   > li {
     @extend .col-12, .col-md-4;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    @include media-breakpoint-up(md) {
+      align-items: center;
+    }
   }
   img {
-    width: 80%;
-    padding: 22%;
+    display: block;
+    width: 12rem; height: 12rem;
+    max-width: 100%;
+    padding: 3rem;
     background-image: url('../images/petits-rayons-moitie.svg');
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 3rem;
+    margin: 0 auto 2rem;
   }
   > li:first-child img {
     background-image: url('../images/petits-rayons-quart.svg');
@@ -24,10 +29,22 @@
 }
 
 #diribeo--en-continu {
+  @extend .row;
+  .illustration {
+    @extend .col-12, .col-md-auto;
+  }
+  .details {
+    @extend .col;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   img {
-    width: 8rem;
-    padding: 1.5rem;
-    margin-right: $grid-gutter-width;
+    display: block;
+    width: 12rem; height: 12rem;
+    max-width: 100%;
+    padding: 3rem;
+    margin: 0 auto 2rem;
     background-image: url('../images/petits-rayons.svg');
     background-repeat: no-repeat;
     background-position: center;
