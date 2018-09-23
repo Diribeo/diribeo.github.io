@@ -61,44 +61,68 @@ layout: main-page
     </dl>
 
     <figure id="meridian--schema-structure">
-      <div class="logos panneau-1">
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/portal.svg" alt="Meridian Portal" />
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/explorer.svg" alt="Meridian Explorer" />
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/power.svg" alt="Meridian Power" />
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/mobile.svg" alt="Meridian Mobile" />
-      </div>
-      <div class="logos panneau-2">
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/cloud.svg" alt="Meridian Cloud" />
-        <span>ou</span>
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/server.svg" alt="Meridian Server" />
-      </div>
-      <div class="logos panneau-3">
-        <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/analytics.svg" alt="Meridian Analytics" />
-      </div>
+      <a href="#details-panneau-1" class="logos panneau-1">
+        <div class="logos-sizer"><div class="logos-wrapper">
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/portal.svg" alt="Meridian Portal" />
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/explorer.svg" alt="Meridian Explorer" />
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/power.svg" alt="Meridian Power" />
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/mobile.svg" alt="Meridian Mobile" />
+        </div></div>
+      </a>
+      <a href="#details-panneau-2-gauche" class="logos panneau-2">
+        <div class="logos-sizer"><div class="logos-wrapper">
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/cloud.svg" alt="Meridian Cloud" />
+          <span>ou</span>
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/server.svg" alt="Meridian Server" />
+        </div></div>
+      </a>
+      <a href="#details-panneau-3" class="logos panneau-3">
+        <div class="logos-sizer"><div class="logos-wrapper">
+          <img class="logo-meridian" src="{{ site.baseurl }}/images/meridian/analytics.svg" alt="Meridian Analytics" />
+        </div></div>
+      </a>
 
-      <div class="details panneau-1">
-        <p>Secure, cloud-based engineering collaboration with your with external stakeholders and contractors, without providing direct access to internal master data and workflows.</p>
-        <p>Easy, web-based access to search and retrieve information and add comments. Ideal for sharing engineering information with other departments, such as Operations and Maintenance.</p>
-        <p>Full control to modify and create engineering information in a controlled project environment. Users include engineering managers, project managers, engineers, and CAD drafters.</p>
-        <p>Anywhere access to search, view, and add comments to information through your mobile phones or tablets. Take action on workflow tasks while away from your desk for increased effectiveness and efficiency.</p>
+      <div class="details panneau-1" id="details-panneau-1">
+        <dl>
+          <dt>Meridian Portal</dt>
+          <dd>Secure, cloud-based engineering collaboration with your with external stakeholders and contractors, without providing direct access to internal master data and workflows.</dd>
+          <dt>Meridian Explorer</dt>
+          <dd>Easy, web-based access to search and retrieve information and add comments. Ideal for sharing engineering information with other departments, such as Operations and Maintenance.</dd>
+          <dt>Meridian Power</dt>
+          <dd>Full control to modify and create engineering information in a controlled project environment. Users include engineering managers, project managers, engineers, and CAD drafters.</dd>
+          <dt>Meridian Mobile</dt>
+          <dd>Anywhere access to search, view, and add comments to information through your mobile phones or tablets. Take action on workflow tasks while away from your desk for increased effectiveness and efficiency.</dd>
+        </dl>
       </div>
-      <div class="details panneau-2 details-gauche">
-        <h5>Meridian Cloud</h5>
-        <p>Empower your asset information with the speed, agility, and affordability of Meridian as a secure cloud service.</p>
-        <p>Built on Microsoft Azure, Meridian Cloud provides certified secure cloud services with maximum reliability and global availability.</p>
-        <p>Getting started is fast and easy with built-in industry best practices for data standards and workflows.</p>
-        <p>Save money by dramatically reducing local IT and implementation expenses, and shifting budgets from CAPEX to OPEX.</p>
+      <div class="details panneau-2 details-gauche" id="details-panneau-2-gauche">
+        <dl>
+          <dt>Meridian Cloud</dt>
+          <dd>
+            <p>Empower your asset information with the speed, agility, and affordability of Meridian as a secure cloud service.</p>
+            <p>Built on Microsoft Azure, Meridian Cloud provides certified secure cloud services with maximum reliability and global availability.</p>
+            <p>Getting started is fast and easy with built-in industry best practices for data standards and workflows.</p>
+            <p>Save money by dramatically reducing local IT and implementation expenses, and shifting budgets from CAPEX to OPEX.</p>
+          </dd>
+        </dl>
       </div>
-      <div class="details panneau-2 details-droite">
-        <h5>Meridian Server</h5>
-        <p>Enrich your asset information platform with ad- vanced capabilities and integrations through this on premise server.</p>
-        <p>Integrations with other critical business systems increase interoperability and enhance efficiency.</p>
-        <p>Support for advanced information types such as 3D CAD and BIM integration, as well as auditable workflows with e-signatures are available to meet the requirements of a wide range of highly regulated industries.</p>
+      <div class="details panneau-2 details-droite" id="details-panneau-2-droite">
+        <dl>
+          <dt>Meridian Server</dt>
+          <dd>
+            <p>Enrich your asset information platform with ad- vanced capabilities and integrations through this on premise server.</p>
+            <p>Integrations with other critical business systems increase interoperability and enhance efficiency.</p>
+            <p>Support for advanced information types such as 3D CAD and BIM integration, as well as auditable workflows with e-signatures are available to meet the requirements of a wide range of highly regulated industries.</p>
+          </dd>
+        </dl>
       </div>
-      <div class="details panneau-3">
-        <h5>Metadata Quality Management</h5>
-        <p>Meridian Analytics provides unprecedented visibility into the metadata on the documents and information that you manage within Meridian.</p>
-        <p>Quickly and effectively analyze data quality and integrity, and plan for improvement. Navigate large datasets by time, location, contractor, asset and more, to find and diagnose areas for improvement.</p>
+      <div class="details panneau-3" id="details-panneau-3">
+        <dl>
+          <dt>Metadata Quality Management</dt>
+          <dd>
+            <p>Meridian Analytics provides unprecedented visibility into the metadata on the documents and information that you manage within Meridian.</p>
+            <p>Quickly and effectively analyze data quality and integrity, and plan for improvement. Navigate large datasets by time, location, contractor, asset and more, to find and diagnose areas for improvement.</p>
+          </dd>
+        </dl>
       </div>
 
       <div class="structure-background"></div>
