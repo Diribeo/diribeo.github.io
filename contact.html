@@ -15,10 +15,13 @@ layout: main-page
     <h2>L'équipe</h2>
 
     <ul id="contact--equipe">
-      {% for membre in site.equipe %}
+      {% assign equipe = site.equipe | sort: "ordre" %}
+      {% for membre in equipe %}
         <li>
-          <img src="{{ site.baseurl }}{{ membre.image }}" alt="{{ membre.title }}" />
-          <div class="media-body">
+          <div class="photo">
+            <img src="{{ site.baseurl }}{{ membre.image }}" alt="{{ membre.title }}" />
+          </div>
+          <div class="bio">
             <h3>{{ membre.title }}</h3>
             {{ membre.excerpt }}
           </div>

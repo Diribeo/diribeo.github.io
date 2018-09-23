@@ -1,8 +1,14 @@
 #contact--equipe {
   @extend .list-unstyled;
   li {
-    @extend .media;
+    @extend .row;
     margin-bottom: 2rem;
+    .photo {
+      @extend .col-12, .col-md-auto;
+    }
+    .bio {
+      @extend .col;
+    }
     img {
       width: 10rem;
     }
