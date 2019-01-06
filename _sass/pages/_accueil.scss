@@ -1,0 +1,26 @@
+#accueil--vous-etes {
+  .nav-tabs {
+    @extend .row;
+    border-bottom: none;
+  }
+  .nav-item {
+    @extend .col-6, .col-md-3, .h6;
+    text-align: center;
+    .nav-link {
+      color: $black;
+      border: none;
+    }
+    img {
+      max-width: 80%;
+      display: block;
+      margin: 0 auto 1rem;
+      background-image: url(../images/petits-rayons.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 10%;
+    }
+  }
+  a[data-toggle="collapse"] {
+    color: $black;
+  }
+}
